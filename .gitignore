@@ -1,0 +1,122 @@
+logs/
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# mypy
+.mypy_cache/
+
+# Pyre
+.pyre/
+
+# pytest
+.cache/
+.pytest_cache/
+
+# coverage
+.coverage
+coverage.xml
+htmlcov/
+*.cover
+*.py,cover
+
+# PyCharm / VSCode settings
+.idea/
+.vscode/
+
+# macOS / Linux / Windows
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# Logs
+*.log
+
+# Test output
+test-output/
+tests/__pycache__/
+
+# Model files
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.mlmodel
+*.joblib
+*.pkl
+
+# Hugging Face
+token.json
+*.huggingface
+huggingface/
+hf_cache/
+~/.huggingface/
+
+# Gradio
+gradio_cached_examples/
+gradio_cache/
+
+# Secret files
+*.env
+*.key
+*.pem
+*.token
+*.secrets
+secrets.json
+
+# VSCode settings (if you use remote containers or devcontainers)
+.devcontainer/
+.vscode/
+
+# Lock files
+*.lock
+
+# Others
+*.bak
+*.swp
+*~

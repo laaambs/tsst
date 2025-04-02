@@ -1,0 +1,6 @@
+model: "meta-llama/Meta-Llama-3-70B-Instruct"
+temp_llm: 0.0
+max_new_tokens: 1024
+config:
+  openai_api_base: "https://api.deepinfra.com/v1/openai"
+  openai_keys:

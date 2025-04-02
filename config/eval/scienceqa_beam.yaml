@@ -1,0 +1,34 @@
+num_beams: 5
+max_length: 1024
+do_sample: false
+temperature: 0.7
+num_return_sequences: 1
+
+task: "multiple_choice_steps_beam"
+
+dataset_name: "val_random_solution_1000.jsonl" # scienceqa + [train, test, val]
+dataset_root: "datasets/ScienceQA"
+data_subset:
+
+data_partition: '440_499'
+
+sample_size:
+seed: 42
+
+branch: 5
+n_consistency: 7
+
+batch_size: 1
+
+models:
+  - policy_model: "llava-v1.5-7b-policy-v0"
+    value_model: "llava-v1.5-7b-prm-v0"
+    tag: "v_0_value_guide_beam"
+    run_flag: false
+    use_value: true
+
+
+
+
+
+

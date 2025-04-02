@@ -1,0 +1,37 @@
+num_beams: 1
+max_length: 1024
+do_sample: false
+temperature: 0.7
+num_return_sequences: 1
+
+task: "multiple_choice_steps_beam"
+use_value: true
+
+dataset_name: "vcr_val" # vcr + [train, val]
+dataset_root: 'datasets/vcr1/'
+data_subset: 'vcr1/vcr_val_random500_annoid.yaml'
+data_partition: 
+
+sample_size : 
+seed: 
+
+branch: 5
+n_consistency: 5
+
+batch_size: 1
+
+models:
+  - policy_model: "llava-v1.5-7b-policy-v1"
+    value_model: "llava-v1.5-7b-prm-v1"
+    tag: "v_1_value_guide_beam"
+    run_flag: false
+    use_value: true
+
+
+
+
+
+
+
+
+
